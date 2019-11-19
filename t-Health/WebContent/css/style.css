@@ -1,0 +1,27 @@
+*, body, container{
+	padding: 0px;
+	margin: 0px;
+}
+
+#index-section{
+	display: grid;
+	grid-template-columns: 65% 35%;
+	background: linear-gradient(-60deg, rgba(237, 203, 203, 0), rgba(109, 170, 238, 0.5));	
+}
+.index-left img{
+	height: 577px;
+}
+.p-underline{
+	width: 40px; 
+	margin: 0 auto; 
+	border-bottom: 4px solid rgb(81, 45, 168); 
+}
+
+@media only screen and (max-width: 768px) {
+	#index-section{
+		grid-template-columns: 0% 100%;
+	}
+	.index-left img{
+		height: 575px;
+	}
+}
