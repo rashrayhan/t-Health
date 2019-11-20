@@ -1,22 +1,27 @@
 package model;
 
+import java.time.LocalDate;
+
 public class Patient {
 	private int patientId;
 	private User user;
 	private Student student;
 	private VitalInfo vitalInfo;
+	private LocalDate walkInDate;
 	
-	public Patient() {
-		
-	}
-	
-	public Patient(int patientId, User user, Student student, VitalInfo vitalInfo) {
+	public Patient(int patientId, User user, Student student, VitalInfo vitalInfo, LocalDate walkInDate) {
+		super();
 		this.patientId = patientId;
 		this.user = user;
 		this.student = student;
 		this.vitalInfo = vitalInfo;
+		this.setWalkInDate(walkInDate);
+	}
+
+	public Patient() {
 		
 	}
+	
 
 	public int getIdPatient() {
 		return patientId;
@@ -55,5 +60,13 @@ public class Patient {
 	public String toString() {
 		return "Patient [patientId=" + patientId + ", userId=" + this.getUserId() + ", studentId=" + student + ", vitalInfoId="
 				+ vitalInfo + "]";
+	}
+
+	public LocalDate getWalkInDate() {
+		return walkInDate;
+	}
+
+	public void setWalkInDate(LocalDate walkInDate) {
+		this.walkInDate = walkInDate;
 	}
 }
