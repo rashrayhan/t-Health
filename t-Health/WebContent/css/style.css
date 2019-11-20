@@ -8,8 +8,11 @@
 	grid-template-columns: 65% 35%;
 	background: linear-gradient(-60deg, rgba(237, 203, 203, 0), rgba(109, 170, 238, 0.5));	
 }
+.index-left{
+	height: 100vh;
+}
 .index-left img{
-	height: 577px;
+	height: 100vh;
 }
 .p-underline{
 	width: 40px; 
