@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="./css/mdb.min.css">
     <link  rel="stylesheet" type="text/css" href="./css/style.css">
     <link  rel="stylesheet" type="text/css" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/print-style.css">
     
 
 </head>
@@ -53,7 +54,7 @@
         <img src="./images/logo.PNG" class="img-fluid" alt="">
         </a>
 
-        <div class="list-group list-group-flush mt-5">
+        <div id="sidebar" class="list-group list-group-flush mt-5">
         <a href="#" class="list-group-item waves-effect">
             <i class="fas fa-users mr-3"></i>Dashboard
         </a>
@@ -67,11 +68,12 @@
     <!-- Sidebar -->
 
     </header>
+
     
   <main class="pt-5 mx-lg-5">
         <div class="container-fluid mt-5">
          <!-- Nav tabs -->
-        <ul class="nav nav-tabs patient-navs-custom" role="tablist">
+        <ul class="nav nav-tabs patient-navs-custom" id="list" role="tablist">
                 <li class="nav-item text-center">
                     <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fa fa-file-medical-alt fa-2x"></i><br> Personal Data</a>
                 </li>
@@ -276,10 +278,14 @@
                     </form>
                 </div>
 
+                <div >
+                        <img src="./images/logo.PNG" id="img" class="img-fluid" alt="">
+                </div>
                 <div class="tab-pane fade in show  p-4" id="panel5" role="tabpane5">
                         
                     <form class="row shadow m-1 bg-white rounded p-5 col-12" action="#!" method="POST">
 
+                        
                         <div class="col-6">
                             <div class="md-form">
                                 <i class="fa fa-sticky-note blue-grey-text prefix"></i>
@@ -298,7 +304,7 @@
                         </div>
                         
                         <div class="text-center col-12">
-                            <button class="btn btn-indigo waves-effect waves-light mt-5" type="submit" onclick="print()">Print</button>
+                            <button class="btn btn-indigo waves-effect waves-light mt-5" id="button" type="submit" onclick="print()">Print</button>
                         </div>
                         
                         
