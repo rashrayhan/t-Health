@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="ISO-8859-1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>t-Health MUM</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/mdb.min.css">
+    <link  rel="stylesheet" type="text/css" href="./css/style.css">
+    <link  rel="stylesheet" type="text/css" href="./css/style.min.css">
+    
+
+</head>
+<body class="grey lighten-3">
+
+    
+    <header>
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+        <div class="container-fluid">
+
+        <!-- Brand -->
+        <a class="navbar-brand waves-effect" href="">
+            <strong class="blue-text">Welcome to t-Health</strong>
+        </a>
+
+        <!-- Collapse -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            
+            <!-- Right -->
+            <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a href="" class="nav-link border border-light rounded waves-effect">
+                <i class="fas fa-sign-out-alt mr-2 blue-text"></i>Logout
+                </a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Sidebar -->
+    <div id="navbarSupportedContent" class="sidebar-fixed position-fixed">
+
+        <a class="waves-effect">
+        <img src="./images/logo.PNG" class="img-fluid" alt="">
+        </a>
+
+        <div class="list-group list-group-flush mt-5">
+        <a href="#" class="list-group-item waves-effect">
+            <i class="fas fa-users mr-3"></i>Dashboard
+        </a>
+        <a href="#" class="list-group-item list-group-item-action waves-effect">
+                <i class="fas fa-chart-bar mr-3"></i>Statistics</a>
+        <a href="#" class="list-group-item list-group-item-action waves-effect">
+            <i class="fas fa-user-cog mr-3"></i>Profile</a>
+        </div>
+
+    </div>
+    <!-- Sidebar -->
+
+    </header>
+    
+  <main class="pt-5 mx-lg-5">
+        <div class="container-fluid mt-5">
+         <!-- Nav tabs -->
+        <ul class="nav nav-tabs patient-navs-custom" role="tablist">
+                <li class="nav-item text-center">
+                    <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab"><i class="fa fa-file-medical-alt fa-2x"></i><br> Personal Data</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" data-toggle="tab" href="#panel2" role="tab"><i class="fa fa-clipboard fa-2x text-center"></i><br>Medical Record</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" data-toggle="tab" href="#panel3" role="tab"><i class="fa fa-stethoscope fa-2x"></i><br> Diagnosis</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" data-toggle="tab" href="#panel4" role="tab"><i class="fa fa-prescription fa-2x"></i><br> Prescription</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link" data-toggle="tab" href="#panel5" role="tab"><i class="fa fa-notes-medical fa-2x"></i><br> Sick Leave</a>
+                </li>
+            </ul>
+            <!-- Tab panels -->
+    
+            <div class="tab-content card">
+                <!--Panel 1-->
+                <div class="tab-pane fade in show p-4" id="panel1" role="tabpanel">
+                    <!--Avatar-->
+                    <div class="avatar text-center patient-avatar">
+                        <img src="./images/doctor.png" class="rounded-circle img-responsive">
+                        <p class="h5 text-muted">#ID: 012989</p> 
+                    </div>
+                    <div class="patient-info mt-3">
+                        <table class="table">
+                            <thead class="blue lighten-5 text-center">
+                                <tr>
+                                    <th colspan="2" class="h5">Patient Personal Information</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="text-right font-weight-normal text-info lead">Name: </td>
+                                    <td class="lead ">Fasil Nahu Samson Haile</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="text-right font-weight-normal text-info lead">Gender: </td>
+                                    <td class="lead ">Male</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="text-right font-weight-normal text-info lead">Date of Birth: </td>
+                                    <td class="lead ">09/24/1970</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="text-right font-weight-normal text-info lead">Phone #: </td>
+                                    <td class="lead ">+1-641-000-0978</td>
+                                </tr>
+
+                                <tr>
+                                    <td scope="row" class="text-right font-weight-normal text-info lead">Email: </td>
+                                    <td class="lead ">fnshaile@mum.edu</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                
+                </div>
+                
+                <div class="tab-pane fade in show p-4" id="panel2" role="tabpane2">
+                        <p class="h6 mb-2 text-center">Last Visit Date: 11-20-2019</p>
+                        <p class="p-underline"></p>
+                    <form class="row shadow m-1 bg-white rounded p-5 col-12" action="#!" method="POST">
+
+                        <div class="col-6">
+                            <div class="md-form">
+                                <i class="fa fa-weight blue-grey-text prefix"></i>
+                                <input type="text" name="weight" id="weight" class="form-control">
+                                <label for="weight">Weight</label>
+                            </div>
+                
+                            <div class="md-form">
+                                <i class="fa fa-ruler-vertical blue-grey-text prefix"></i>
+                                <input type="text" name="height" id="height" class="form-control">
+                                <label for="height">Height</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fa fa-thermometer-three-quarters blue-grey-text prefix"></i>
+                                <input type="text" name="temperature" id="temperature" class="form-control">
+                                <label for="temperature">Temperature</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="md-form">
+                                <i class="fa fa-heartbeat blue-grey-text prefix"></i>
+                                <input type="text" name="heart-rate" id="heart-rate" class="form-control">
+                                <label for="heart-rate">Heart Rate</label>
+                            </div>
+                
+                            <div class="md-form">
+                                <i class="fa fa-air-freshener blue-grey-text prefix"></i>
+                                <input type="text" name="oxygen" id="oxygen" class="form-control">
+                                <label for="oxygen">Oxygen Level</label>
+                            </div>
+                            <div class="md-form">
+                                <i class="fa fa-tint blue-grey-text prefix"></i>
+                                <input type="text" name="blood" id="blood" class="form-control" value="">
+                                <label for="blood">Blood Pressure</label>
+                            </div>
+                        </div>
+                            <button class="btn btn-block btn-deep-purple my-4 mt-5" type="submit">Save</button>
+                        
+                        
+                    </form>
+                </div>
+
+                <div class="tab-pane fade in show p-4" id="panel3" role="tabpane2">
+                        
+                    <form class="row shadow m-1 bg-white rounded p-5 col-12" action="#!" method="POST">
+
+                        <div class="col-6">
+                            <div class="md-form">
+                                <i class="fas fa-diagnoses prefix"></i>
+                                <textarea name="symptoms" id="symptoms" class="md-textarea form-control" rows="4"></textarea>
+                                <label for="symptoms">Symptoms</label>
+                            </div>
+                
+                            <div class="md-form">
+                                <i class="fas fa-tablets prefix"></i>
+                                <textarea name="medication" id="medication" class="md-textarea form-control" rows="4"></textarea>
+                                <label for="medication">Current Medication</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="md-form">
+                                <i class="fas fa-file-medical prefix"></i>
+                                <textarea name="findings" id="findings" class="md-textarea form-control" rows="4"></textarea>
+                                <label for="findings">Findings</label>
+                            </div>
+                
+                            <div class="md-form">
+                               <i class="fas fa-comment-medical prefix"></i>
+                                <textarea name="treatment" id="treatment" class="md-textarea form-control" rows="4"></textarea>
+                                <label for="treatment">Treatment</label>
+                            </div>
+                        </div>
+                            <button class="btn btn-block btn-deep-purple my-4 mt-5" type="submit">Save</button>
+                        
+                        
+                    </form>
+                </div>
+
+                <div class="tab-pane fade in show active p-4" id="panel4" role="tabpane2">
+                    <form class="row shadow m-1 bg-white rounded p-5 col-12" action="#!" method="POST">
+                        <div class="col-12 mb-4">
+                            <input class="form-control form-control-lg" type="text" placeholder="Large input">
+                        </div>
+
+                        <div class="col-6">
+                            <select class="browser-default custom-select">
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                
+                            <div class="md-form">
+                                <i class="fa fa-ruler-vertical blue-grey-text prefix"></i>
+                                <input type="text" name="height" id="height" class="form-control">
+                                <label for="height">Height</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="md-form">
+                                <i class="fa fa-heartbeat blue-grey-text prefix"></i>
+                                <input type="text" name="heart-rate" id="heart-rate" class="form-control">
+                                <label for="heart-rate">Heart Rate</label>
+                            </div>
+                
+                            <div class="md-form">
+                                <i class="fa fa-air-freshener blue-grey-text prefix"></i>
+                                <input type="text" name="oxygen" id="oxygen" class="form-control">
+                                <label for="oxygen">Oxygen Level</label>
+                            </div>
+                        </div>
+                            <button class="btn btn-block btn-deep-purple my-4 mt-5" type="submit">Save</button>
+                        
+                        
+                    </form>
+                </div>
+
+            </div>
+    
+        </div>
+      </main>
+      <!--Main layout-->
+
+      
+    <!--Footer-->
+    <footer class="page-footer text-center primary-color-dark darken-2 mt-4 wow fadeIn">
+        <!--Copyright-->
+        <div class="footer-copyright py-3">
+        © 2019 Copyright: <a href="#" target="_blank"> WAP472 Final Project </a>
+        </div>
+        <!--/.Copyright-->
+        
+    </footer>
+    <!--/.Footer-->
+            
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/mdb.min.js"></script>
+	<script type="text/javascript"></script>
+
+</body>
+</html>
