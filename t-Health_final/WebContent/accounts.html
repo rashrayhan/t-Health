@@ -8,7 +8,8 @@
 	<title>t-Health MUM</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" href="./css/mdb.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css"/>
     <link  rel="stylesheet" type="text/css" href="./css/style.css">
     <link  rel="stylesheet" type="text/css" href="./css/style.min.css">
     
@@ -70,23 +71,13 @@
     
   <main class="pt-5 mx-lg-5">
         <div class="container-fluid mt-5">
-            <div class="d-flex justify-content-center">
-            <div class="card mb-5 wow fadeIn col-8">
-                <div class="card-body d-sm-flex text-center">
-                    <form class="form col-12 p-5" action="" method="post">
-                        <input class="form-control mr-sm-2 p-4" type="text" name="p-id" placeholder="Enter patient id: e.g. 666555" aria-label="Patient id">
-                        <button class="btn btn-block blue-gradient btn-rounded mt-3 p-3" type="submit">Retrieve File</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-         
+            
           <!-- Heading -->
     
           <!--Grid row-->
           <div class="row wow fadeIn">
             <!--Grid column-->
-            <div class="col-md-8 mb-4">
+            <div class="col-md-12 mb-4">
     
               <!--Card-->
               <div class="card">
@@ -95,14 +86,16 @@
                 <div class="card-body">
     
                   <!-- Table  -->
-                  <table class="table table-hover">
+                  <table id="table_id" class="display table table-striped">
                     <!-- Table head -->
                     <thead class="blue lighten-4">
                       <tr>
                         <th>#</th>
-                        <th>Patient ID</th>
-                        <th>Symptoms</th>
-                        <th>Time</th>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>DOB</th>
+                        <th>Phone</th>
+                        <th>Email</th>
                       </tr>
                     </thead>
                     <!-- Table head -->
@@ -111,10 +104,21 @@
                     <tbody>
                       <tr>
                         <th scope="row">1</th>
-                        <td><a href="patient.html?id=012989" class="text-primary font-weight-normal">012989</a></td>
-                        <td>Body ache, cough, muscle pull</td>
-                        <td>08:09</td>
+                        <td><a href="patient.html?id=610519" class="text-primary font-weight-normal">610519</a></td>
+                        <td>Abdulrasheed Mustapha</td>
+                        <td>09/24/1970</td>
+                        <td>+1-641-000-0978</td>
+                        <td>fnshaile@mum.edu</td>
                       </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td><a href="patient.html?id=610519" class="text-primary font-weight-normal">610519</a></td>
+                        <td>Fasil Hebtegroisis</td>
+                        <td>09/24/1970</td>
+                        <td>+1-641-000-0978</td>
+                        <td>fnshaile@mum.edu</td>
+                      </tr>
+
                     </tbody>
                     <!-- Table body -->
                   </table>
@@ -127,48 +131,6 @@
     
             </div>
             <!--Grid column-->
-            
-            
-            <!--Grid column-->
-            <div class="col-md-4 mb-4">
-    
-                    <!--Card-->
-                    <div class="card">
-                      <div class="card-header text-center">Recent Patients</div>
-                      <!--Card content-->
-                      <div class="card-body">
-          
-                        <!-- Table  -->
-                        <table class="table table-hover">
-                          <!-- Table head -->
-                          <thead class="blue-grey lighten-4">
-                                <tr>
-                                  <th>#</th>
-                                  <th>Patient ID</th>
-                                  <th>Time</th>
-                                </tr>
-                              </thead>
-                              <!-- Table head -->
-              
-                              <!-- Table body -->
-                              <tbody>
-                                <tr>
-                                  <th scope="row">1</th>
-                                  <td><a href="#" class="text-primary font-weight-normal">012989</a></td>
-                                  <td>13:05</td>
-                                </tr>
-                                
-                              </tbody>
-                        </table>
-                        <!-- Table  -->
-          
-                      </div>
-          
-                    </div>
-                    <!--/.Card-->
-          
-                  </div>
-                  <!--Grid column-->
           
           </div>
           <!--Grid row-->
@@ -192,8 +154,9 @@
 	<script type="text/javascript" src="./js/jquery.min.js"></script>
 	<script type="text/javascript" src="./js/popper.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="./js/mdb.min.js"></script>
-	<script type="text/javascript"></script>
+    <script type="text/javascript" src="./js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
+    <script type="text/javascript"  src="./js/app.js"></script>
 
 </body>
 </html>
